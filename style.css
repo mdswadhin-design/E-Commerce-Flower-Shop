@@ -125,3 +125,97 @@ input{
         transform: rotate(360deg);
     }
 }
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+
+}
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+}
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+}
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    outline: 2px solid #faad96;
+}
+.category .card-list .card img{
+    width:100px ;
+    height: auto;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 10px 20px 100px 10px #faad96;
+    border-radius: 50%;
+
+
+}
+.category .card-list .card .food-title{
+    padding: 40px 0 10px ;
+}
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.category .card .desc-food p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+
+}
+.category .card .price{
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+.category .card .price span{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.category .card .price span i{
+    color: #ff511c;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 0px;
+
+}
+.category .card .price span{
+    
+   margin-left: 60px;
+    
+}
+
+/* scrollbar modification*/
+::-webkit-scrollbar{
+ width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #ff511c;
+}
